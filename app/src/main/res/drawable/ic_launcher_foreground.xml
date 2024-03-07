@@ -1,30 +1,15 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+    android:viewportWidth="143.18182"
+    android:viewportHeight="143.18182">
+  <group android:translateX="49.590908"
+      android:translateY="43.590908">
     <path
+        android:pathData="M43,0L1,0C0.447,0 0,0.447 0,1L0,55C0,55.553 0.447,56 1,56L43,56C43.553,56 44,55.553 44,55L44,1C44,0.447 43.553,0 43,0ZM6,54L2,54L2,50L6,50L6,54ZM6,48L2,48L2,43L6,43L6,48ZM6,41L2,41L2,36L6,36L6,41ZM6,34L2,34L2,29L6,29L6,34ZM6,27L2,27L2,22L6,22L6,27ZM6,20L2,20L2,15L6,15L6,20ZM6,13L2,13L2,8L6,8L6,13ZM6,6L2,6L2,2L6,2L6,6ZM36,54L8,54L8,29L36,29L36,54ZM36,27L8,27L8,2L36,2L36,27ZM42,54L38,54L38,50L42,50L42,54ZM42,48L38,48L38,43L42,43L42,48ZM42,41L38,41L38,36L42,36L42,41ZM42,34L38,34L38,29L42,29L42,34ZM42,27L38,27L38,22L42,22L42,27ZM42,20L38,20L38,15L42,15L42,20ZM42,13L38,13L38,8L42,8L42,13ZM42,6L38,6L38,2L42,2L42,6Z"
+        android:strokeWidth="1"
         android:fillColor="#FFFFFF"
         android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:strokeColor="#00000000"/>
+  </group>
 </vector>
