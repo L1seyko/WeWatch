@@ -8,10 +8,12 @@ import android.view.*
 import android.view.View.*
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.*
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.hfad.wewatch.model.LocalDataSource
 import com.hfad.wewatch.model.Movie
+import com.hfad.wewatch.MainAdapter
 import com.hfad.wewatch.network.RetrofitClient
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.Flow
@@ -37,22 +39,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         getMyMoviesList()
         setupViews()
+
     }
 
     override fun onStart() {
         super.onStart()
         dataSource = LocalDataSource(application)
         getMyMoviesList()
+
     }
     override fun onResume() {
         super.onResume()
         dataSource = LocalDataSource(application)
         getMyMoviesList()
+
     }
     override fun onStop() {
         super.onStop()
         Log.e(TAG, "stopped")
-        coroutineScope.cancel() // Cancel coroutine scope
     }
 
     private fun setupViews() {
@@ -72,17 +76,12 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Log.e(TAG, "Error: $e")
                 displayError("Error fetching movie list")
+
             }
         }
     }
 
-    private val observer: FlowCollector<List<Movie>>
-        get() = object : FlowCollector<List<Movie>> {
 
-            override suspend fun emit(value: List<Movie>) {
-                displayMovies(value)
-            }
-        }
 
     private fun displayMovies(movieList: List<Movie>?) {
         if (movieList.isNullOrEmpty()) {

@@ -22,6 +22,7 @@ class LocalDataSource(application: Application) {
     suspend fun insert(movie: Movie) {
         withContext(Dispatchers.IO) {
             movieDao.insert(movie)
+
         }
     }
 

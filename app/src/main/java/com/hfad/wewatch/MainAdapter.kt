@@ -32,6 +32,10 @@ class MainAdapter(internal var movieList: List<Movie>, internal var context: Con
     override fun getItemCount(): Int {
         return movieList.size
     }
+    fun submitList(newList: List<Movie>) {
+        movieList = newList
+        notifyDataSetChanged()
+    }
 
     inner class MoviesHolder(v: View) : RecyclerView.ViewHolder(v) {
 
